@@ -21,7 +21,10 @@
   # Networking
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
+  
 
+  # ZSH 
+  programs.zsh.enable = true;
   # Localization & Timezone
   time.timeZone = "Africa/Cairo";
   i18n.defaultLocale = "en_US.UTF-8";
@@ -41,6 +44,7 @@
   users.users.kerolos = {
     isNormalUser = true;
     description = "kerolos";
+    shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
   };
 

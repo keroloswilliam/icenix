@@ -2,9 +2,9 @@
 
 {
   environment.systemPackages = with pkgs; [
-    alacritty wget git vim curl 
+    zsh psmisc alacritty wget git vim curl rofi feh
     discord enpass _1password-gui flatpak slack
-    brave firefox spotify
+    brave firefox spotify scrot polybar siji
   ];
 }
 
